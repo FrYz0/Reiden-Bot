@@ -10,6 +10,6 @@ client.on('message', message =>{
         message.delete()
       }
 
-    if (message.content === '@Reiden Bot#1605 Bravo !'){
+    if (message.content === '@Reiden Bot Bravo !'){
         message.reply('Merci je ne fait que mon travail. :wink:')}
 })
