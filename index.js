@@ -5,8 +5,8 @@ var prefix = "?";
 client.login(procces.env.TOKEN);
 
 client.on('message', message =>{
-    if(message.content === "Reiden Bot ?"){
-        message.delete()
+    if(message.content === "https://discord.gg/"){
         message.reply('Les Pub discord sont interdites sur ce serveur ! :wink:');
+        message.delete()
     }
 });
