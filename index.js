@@ -1,12 +1,12 @@
-const Discord = require('discord.js')
-const bot = new Discord.Client()
-var prefix = "?"
+const Discord = require('discord.js');
+const client = new Discord.Client();
+var prefix = "?";
 
-bot.login(process.env.TOKEN)
+client.login(procces.env.TOKEN);
 
-bot.on('message', message =>{
-    if (message.content('https://discord.gg/')){
-        message.reply("Les Pub discord sont interdites. :wink:")
+client.on('message', message =>{
+    if(message.content === "Reiden Bot ?"){
         message.delete()
-      }
+        message.reply('Les Pub discord sont interdites sur ce serveur ! :wink:');
+    }
 });
