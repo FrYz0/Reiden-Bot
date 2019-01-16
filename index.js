@@ -10,8 +10,9 @@ client.on('message', message =>{
         message.delete()
       }
 
-      if (message.content === ('https://discord.gg/')){
+      if (message.content === 'https://discord.gg/'){
       message.reply('Les pubs Discord sont interdites !')
       message.delete()
+      console.log('pub discord supprimer')
     }
 })
