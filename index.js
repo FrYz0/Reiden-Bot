@@ -9,4 +9,7 @@ client.on('message', message =>{
         message.reply('Les pubs Discord sont interdites sur ce serveur !')
         message.delete()
       }
+
+    if (message.content === '@Reiden Bot#1605 Bravo !'){
+        message.reply('Merci je ne fait que mon travail. :wink:')}
 })
