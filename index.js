@@ -5,14 +5,8 @@ var prefix = "?";
 client.login(process.env.TOKEN)
 
 client.on('message', message =>{
-    if (message.content.startsWith('https://discord.gg/')){
+    if (message.content.startsWith.string('https://discord.gg/')){
         message.reply('Les pubs Discord sont interdites sur ce serveur !')
         message.delete()
       }
-
-      if (message.content === 'https://discord.gg/'){
-      message.reply('Les pubs Discord sont interdites !')
-      message.delete()
-      console.log('pub discord supprimer')
-    }
 })
