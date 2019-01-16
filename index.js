@@ -5,7 +5,7 @@ var prefix = "?"
 bot.login(process.env.TOKEN)
 
 bot.on('message', message =>{
-    if (message.content.startsWith('https://discord.gg/')){
+    if (message.content('https://discord.gg/')){
         message.reply("Les Pub discord sont interdites. :wink:")
         message.delete()
       }
