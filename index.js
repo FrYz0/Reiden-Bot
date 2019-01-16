@@ -9,7 +9,7 @@ client.on('message', message =>{
         message.reply('Les pubs Discord sont interdites sur ce serveur !')
         message.delete()
       }
-    if (message.content === prefix /- "clear" ){
-        message.channel.bulkdelete(list)
+    if (message.content.startsWith("Bravo Reiden Bot !")){
+        message.reply("Merci beacoup ! Je ne fais que mon boulôt :wink:")
     }
 })
