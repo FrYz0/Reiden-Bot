@@ -5,8 +5,8 @@ var prefix = "?";
 client.login('NTMzNDc3NjgyMDUxMTUzOTMx.DxyzFw.NP1zpsOAOWWtoCkWEuqyqDTvLkg');
 
 client.on('message', message =>{
-    if(message.content === "Reiden Bot ?"){
+    if (message.content.startsWith('https://discord.gg/')){
         message.delete()
-        message.reply('Les Pub discord sont interdites sur ce serveur. :wink:');
-    }
+        message.reply("Les Pub discord sont interdites. :wink:")
+      }
 });
