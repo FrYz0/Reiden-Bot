@@ -12,4 +12,14 @@ client.on('message', message =>{
     if (message.content.startsWith("Bravo Reiden Bot !")){
         message.reply("Merci beacoup ! Je ne fais que mon boulôt :wink:")
     }
+    if (message.content.startsWith("RH.Clear")){
+        if (!message.guild.memeber(message.author).hasPermission("MANAGE_MESSAGE")) return message.channel.reply("Vous n'avez pas la permission:MANAGE_MESSAGE.")
+
+        let args = message.content.split(" ").slice(1)
+
+        if (!args[0]) return message.channel.reply("La commande ne peut pas etre executer pour cause: nombre de message a supprimer manquant")
+        message.channel.bulkDelete(args[0]).then(() => {
+            message.channel.send('${args[0]} Message ont été supprimer.' )
+        })
+    }
 })
