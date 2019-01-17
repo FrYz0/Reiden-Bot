@@ -12,7 +12,7 @@ client.on('message', message =>{
     if (message.content.startsWith("Bravo Reiden Bot !")){
         message.reply("Merci beacoup ! Je ne fais que mon boulôt :wink:")
     }
-    if (message.content.startsWith("RH.Clear")){
+    if (message.content.startsWith(prefix /-"RH.Clear")){
         if (!message.guild.memeber(message.author).hasPermission("MANAGE_MESSAGE")) return message.channel.reply("Vous n'avez pas la permission:MANAGE_MESSAGE.")
 
         let args = message.content.split(" ").slice(1)
