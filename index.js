@@ -1,16 +1,16 @@
-const Discord = require('discord.js')
+const Discord = require("discord.js")
 const client = new Discord.Client()
 var prefix = "?"
 
-client.login('process.env.TOKEN')
+client.login(process.env.TOKEN)
 
 client.on('message', message =>{
-    if (message.content.startsWith('https://discord.gg/')){
+    if (message.content.startsWith("https://discord.gg/")){
         message.delete()
-        message.reply('Les pubs Discord sont interdites sur ce serveur !')
+        message.reply("Les pubs Discord sont interdites sur ce serveur !")
     }
-    if (message.content.startsWith('http://discord.gg/')){
+    if (message.content.startsWith("http://discord.gg/")){
         message.delete()
-        message.reply("Et non,mon createur a penser aux http quand il mm'as codé")
+        message.reply("Et non,mon createur a penser aux http quand il m'as codé")
     }
 })
