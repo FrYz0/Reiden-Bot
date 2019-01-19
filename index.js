@@ -11,6 +11,6 @@ client.on('message', message =>{
     }
     if (message.content.startsWith('http://discord.gg/')){
         message.delete()
-        message.reply("Et non j'ai penser aux http quand j'ai codé")
+        message.reply("Et non,mon createur a penser aux http quand il mm'as codé")
     }
 })
