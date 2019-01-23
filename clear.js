@@ -15,14 +15,14 @@ static action (message) {
 
     if (message.content === 'RH.clear') {
 
-        message.reply('combien de message a supprimer ?')
+        message.reply('Combien de message a supprimer ?')
     }
 
     else {
 
         let x = parseInt(msg[0], 10)
-        if (x > 1000) {
-            x = 1000
+        if (x > 100) {
+            x = 100
         }
     message.delete()
     message.channel.bulkDelete(x)
