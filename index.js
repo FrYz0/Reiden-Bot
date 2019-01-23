@@ -1,6 +1,5 @@
 const Discord = ('discord.js')
 const client = new Discord.client()
-
 const Clear = require('clear.js')
 
 client.login(process.env.TOKEN)
