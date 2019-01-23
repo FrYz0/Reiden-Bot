@@ -1,16 +1,26 @@
-const Discord = require("discord.js")
-const client = new Discord.Client()
-var prefix = "?"
+const Discord = ('discord.js')
+const bot = new Discord.client()
 
-client.login(process.env.TOKEN)
+const Clear = require('clear.js')
 
-client.on('message', message =>{
-    if (message.content.startsWith("https://discord.gg/")){
-        message.delete()
-        message.reply("Les pubs Discord sont interdites sur ce serveur !")
+bot.login(process.env.TOKEN)
+
+bot.on('ready', function() {
+    bot.user.setActivity('Salut je suis un bot conçus par Mylan RH pour le reiden home')
+})
+
+bot.on('message', message => {
+
+    Clear.parse(message)
+
+})
+client.on('message', message => {
+    if (message.content.startsWith('https://discord.gg/')) {
+    message.delete()
+    message.reply('Les pubs discord sont interdites !')
     }
-    if (message.content.startsWith("http://discord.gg/")){
-        message.delete()
-        message.reply("Et non,mon createur a penser aux http quand il m'as codé")
+    if (message.content.startsWith('http://discord.gg/')) {
+    message.delete()
+    message.reply('Et non les http sont aussi compris !')
     }
 })
